@@ -4,10 +4,9 @@ import pandas as pd
 import numpy as np
 
 
-# assumption: custom code here to obtain df
 def register_dataframe_as_dataset() -> None:
     local_path = "data/"
-    target_path = "path/to/upload/on/blob"
+    target_path = "random_data/"
 
     ws = Workspace.get(
         name="my_ws",
