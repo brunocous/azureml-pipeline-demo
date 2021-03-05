@@ -1,0 +1,9 @@
+# local development
+-e .
+
+# other
+azureml-core
+azureml-pipeline
+pandas
+catboost
+black
