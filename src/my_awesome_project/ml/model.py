@@ -10,7 +10,7 @@ def train_model(data: pd.DataFrame, epochs: int) -> CatBoostRegressor:
         iterations=epochs,
         depth=2,
         learning_rate=1,
-        loss_function="Logloss",
+        loss_function="RMSE",
         verbose=True,
     )
 
