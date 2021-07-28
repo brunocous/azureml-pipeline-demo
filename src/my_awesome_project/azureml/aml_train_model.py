@@ -8,7 +8,7 @@ if __name__ == "__main__":
     ap.add_argument("--epochs", default=10)
     args = ap.parse_args()
 
-    clean_df = run.input_datasets["my_clean_dataset"].to_pandas_dataframe()
+    clean_df = run.input_datasets["my_clean_data"].to_pandas_dataframe()
     trained_model = train_model(data=clean_df, epochs=args.epochs)
     trained_model.save("./outputs/model")  # /outputs is important
     run.register_model(name="my_model", path="outputs/model")
